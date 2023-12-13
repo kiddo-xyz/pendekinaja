@@ -1,0 +1,203 @@
+/* https://colorhunt.co/palette/fffbf5f7efe5c3acd07743db */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.background {
+    width: 100%;
+    height: 920px;
+    background-color: #F5F7F8;
+    
+}
+
+nav {
+    /* justify-content: space-around; */
+}
+
+.navitems {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+ul li {
+    margin: 0 10px;
+    font-size: 3vh;
+    font-family: poppins, sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #45474B;
+}
+
+li.atau {
+    font-size: 2.5vh;
+}
+
+.navitems li a:hover,
+    .links a:hover,
+    .navItems a.active {
+        text-decoration: underline 2px #F4CE14;;
+    }
+
+p.title {
+    color: #45474B;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    position: absolute;
+    top: 36%;
+    left: 8%;
+}
+
+p.title-main {
+    color: #7743DB;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+    font-size: 6vh;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+p.paragraph-1 {
+    color: #45474B;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 2.2vh;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 45%;
+}
+
+span.sp-p1{
+    color: #45474B;
+    text-decoration: underline 3px #F4CE14;
+    font-weight: 600;
+
+}
+
+table.table {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.rounded-table {
+    
+}
+
+.title-link{
+    font-family: poppins, sans-serif;
+    font-size: 5vh;
+    font-weight: 600;
+    color: #45474B;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    text-decoration: underline #F4CE14;
+}
+
+p.title-secondary {
+    position: relative;
+    top: 650px;
+    font-family: poppins, sans-serif;
+    font-size: 4vh;
+    font-weight: 400;
+    text-align: center;
+}
+
+form.input-link {
+    position: relative;
+    top: 660px;
+    text-align: center;
+}
+
+.button button {
+    margin-top: 5px;
+    width: 90px;
+}
+
+.sp2 {
+    text-decoration: underline 5px #F4CE14;
+}
+
+.title-third {
+    font-family: poppins, sans-serif;
+    font-size: 3vh;
+    position: relative;
+    top: 650px;
+    text-align: center;
+    color: #45474B;
+    font-weight: 600;
+}
+
+.message-success {
+    font-family: poppins, sans-serif;
+    font-size: 2.5vh;
+    position: relative;
+    top: 660px;
+    text-align: center;
+    color: #45474B;
+}
+
+.foooter {
+    width: 100%;
+    height: 50px;
+    background-color: #45474B;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title-footer {
+    text-align: center;
+    padding-top: 18px;
+    color: #F7EFE5;
+}

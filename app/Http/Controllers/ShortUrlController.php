@@ -27,7 +27,7 @@ class ShortUrlController extends Controller
                     'short_url' => $short_url
                 ]);
 
-                return redirect()->back()->with('success message', 'Your Short URL : <a href="'.url($short_url).'" class="text-yellow-500">'. url($short_url).'</a>');
+                return redirect()->back()->with('success message', 'Tautan Baru : <a href="'.url($short_url).'" class="text-yellow-500">'. url($short_url).'</a>');
             }
         }
         return back();
@@ -41,5 +41,15 @@ class ShortUrlController extends Controller
             return redirect()->to(url($short_url->original_url));
         }
         return redirect()->to(url('/'));
+    }
+
+    public function delete($id){
+    $links = ShortUrl::find($id);
+
+    if ($links) {
+        $links->delete();
+        return redirect()->to('/links');
+    }
+    // Tambahkan pesan atau redirect ke halaman yang sesuai jika diperlukan
     }
 }

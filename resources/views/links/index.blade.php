@@ -1,7 +1,49 @@
 <x-app-layout>
-    <x-slot name="header">
-        My Links
-    </x-slot>
+    <div class="background">
+        @include('layouts.navbar')
+        
+        <h2 class="title-link">Riwayat Tautan</h2>
+        
+        <div class="rounded-table">
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Original URL</th>
+                        <th scope="col">Short URL</th>
+                        <th scope="col">Views</th>
+                        <th scope="col">Aksi</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    @foreach($links as $link)
+                    {{-- var_dump({{$links}}); --}}
+                    {{-- @for ($i = 1; $i <= ; $i++) --}}
+    
+                                <tr>
+                                    {{-- <td class="px-6 py-4 whitespace-nowrap">{{ $i }}</td> --}}
+                                    <td></td>
+                                    <td class="px-6 py-4 whitespace-nowrap">{{ $link->original_url }}</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">{{ url($link->short_url) }}</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">{{ $link->visits }}</td>
+                                    <td class="button">
+                                        <button type="button" class="btn btn-primary btn-sm">Kustomisasi</button>
+                                        <form action="{{ route('data.delete', $link->id) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm" type="submit" class="btn btn-danger">Hapus</button>                                        </form>
+                                    </td>
+                                </tr>
+                                {{-- @endfor --}}
+                                @endforeach
+                </tbody>
+              </table>
+        </div>
+    </div>
+    
+</x-app-layout>
+
+{{-- <x-app-layout>
     <div class="max-w-6xl mx-auto mt-8">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -41,4 +83,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-app-layout> --}}
